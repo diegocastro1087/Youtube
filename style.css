@@ -79,7 +79,7 @@ header {
 }
 
 #menuprofile {
-    background-image: url(/assets/cityprofile.jpg);
+    background-image: url(assets/cityprofile.jpg);
     border-radius: 3000px;
     background-size:cover;
     background-repeat: no-repeat;
