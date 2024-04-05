@@ -1,0 +1,588 @@
+body {
+    padding-top: 60px;
+    max-width: 2060px;
+    background-color: #131313;
+    min-width: 500px;
+}
+
+body::-webkit-scrollbar {
+    height: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(62, 62, 62);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(171, 171, 171);
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: rgb(19, 19, 19);
+    position: fixed;
+    top: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    width: 100%;
+    display: flex;
+    height: 35px;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.menuname {
+    display: flex;
+    margin-right: 25px;
+    align-items: center;
+}
+
+.menuname img {
+    height: 30px;
+}
+
+.menuname sup {
+    font-size: 10px;
+    color: rgb(188, 188, 188);
+    top: -3px;
+    position: absolute;
+}
+
+.menuname h1 {
+    margin: 0px;
+    font-size: 20px;
+    font-family: Roboto, Arial, sans-serif;
+    transform: scaleX(0.9);
+}
+
+.menuicon {
+    display: flex;
+}
+
+.menuicon span {
+    font-size: 25px;
+    font-weight: 200;
+    padding: 0px 35px;
+    display: flex;
+    align-items: center;
+}
+
+.taskbar input {
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+    height: 30px;
+    width: 34vw;
+    background-color: rgb(22, 22, 22);
+    border-radius: 30px 0px 0px 30px;
+    margin-right: 0px;
+    border: 1px solid rgb(144, 144, 144);
+}
+
+.taskbar {
+    display: flex;
+
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    height: 34px;
+    width: 60px;
+    position: relative;
+    border-radius: 0px 30px 30px 0px;
+    border-color: black;
+}
+
+.mic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    background-color: grey;
+    height: 44px;
+    width: 44px;
+    border-radius: 30px;
+    position: relative;
+    top: -5px;
+}
+
+.account {
+    display: flex;
+}
+
+.account span {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.ac1,
+.ac2,
+.ac3 {
+    margin: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ac1 span,
+.ac2 span {
+    font-size: 25px;
+}
+
+.ac3 span {
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+.left {
+    width: 50vw;
+}
+
+.left video {
+    border-radius: 20px;
+    width: 50vw;
+}
+
+.everything {
+    margin-top: 35px;
+    margin-left: 100px;
+    display: flex;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.things {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.leftthings {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profileimg img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.profiletitle {
+    margin-left: 15px;
+    color: rgb(255, 255, 255);
+
+}
+
+.profilename {
+    font-size: 18px;
+    display: flex;
+}
+
+.profilename sup span {
+    position: relative;
+    top: -5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    background-color: grey;
+}
+
+.profilefame {
+    color: rgb(184, 140, 140);
+}
+
+.subscribe {
+    background-color: rgb(241, 241, 241);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 30px;
+    padding: 0px 15px;
+    border-radius: 100000px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.subscribe2 {
+    background-color: rgb(241, 241, 241);
+    color: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-left: 30px;
+    padding: 0px 15px;
+    border-radius: 100000px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.rightthings {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 15px;
+}
+
+.barra {
+    position: relative;
+    top: -2px;
+    font-size: 30px;
+}
+
+.good {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    gap: 18px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 1000px;
+}
+
+.numberoflikes {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.share {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    gap: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 1000px;
+}
+
+.download {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    gap: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 1000px;
+}
+
+.morethings {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    border-radius: 50%;
+}
+
+.things {
+    justify-content: space-between;
+}
+
+.showmore {
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    background-color: rgb(232, 232, 232);
+    border-radius: 13px;
+    width: 150px;
+    display: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.info {
+    margin-top: 15px;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(46, 46, 46);
+    padding: 10px;
+    font-family: sans-serif;
+    margin-bottom: 35px;
+}
+
+.everythingofinfo {
+    display: block;
+}
+
+.views {
+    display: flex;
+    font-size: 10px;
+    gap: 10px;
+}
+
+.views h1,
+.views h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.info p {
+    margin-top: 5px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.musicas {
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.musicas::-webkit-scrollbar {
+    height: 12px;
+}
+
+.musicas::-webkit-scrollbar-track {
+    background: rgb(62, 62, 62);
+    border-radius: 5px;
+}
+
+.musicas::-webkit-scrollbar-thumb {
+    background-color: rgb(171, 171, 171);
+    border-radius: 20px;
+}
+
+.info hr {
+    background-color: rgb(86, 86, 86);
+    height: 7px;
+    border-style: none;
+    margin: 0px;
+}
+
+
+.titlemusic {
+    margin: 20px 0px;
+}
+
+.showless {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(232, 232, 232);
+    border-radius: 13px;
+    width: 150px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.music {
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-left: 12px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    height: 60px;
+    min-width: 500px;
+    background-color: rgb(79, 79, 79);
+}
+
+.titleofmusic {
+    font-size: 20px;
+    color: rgb(59, 174, 255);
+    font-weight: 300;
+}
+
+.musicnumber {
+    color: rgb(204, 204, 204);
+}
+
+.anuncio {
+    display: flex;
+    justify-content: center;
+}
+
+.anuncio img {
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.right {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.video-box {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.videos-box {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.videos {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    height: 25vh;
+}
+
+.imgvideo {
+    height: 100%;
+}
+
+.rightvideo {
+    margin-top: 5px;
+}
+
+.videos img {
+    height: 100%;
+    border-radius: 8px;
+}
+
+.videos h1 {
+    font-size: 2vh;
+    margin: 0px;
+}
+
+.canalvideo {
+    margin-top: 10px;
+}
+
+.videos h1,
+.videos h2,
+.canalvideo {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.videos h2,
+.canalvideo {
+    font-size: 2.5vh;
+    font-weight: 300;
+    color: grey;
+}
+
+.videos h2 {
+    margin-top: 5px;
+}
+
+.comentario {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 10px;
+    margin-bottom: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.comentario h1,
+.comentario h2,
+.comentario h3 {
+    margin: 0px;
+}
+
+.imgcomment img {
+    padding: 5px;
+    border-radius: 50%;
+    width: 50px;
+    background-color: rgb(238, 238, 238);
+}
+
+.rightcomment {
+    color: white;
+}
+
+.rightcomment h2 {
+    margin-top: 15px;
+}
+
+.profilecomment {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+}
+
+.profilecomment h3 {
+    font-size: 15px;
+    margin-left: 5px;
+    color: grey;
+}
+
+.likecomment {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.leftlike {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bottomcomment {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.bottomcomment h1 {
+    font-size: 16px;
+}
+
+.bottomcomment span {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+    .video-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px;
+        grid-gap: 70px;
+    }
+
+    .rightvideo h1 {
+        font-size: 10px;
+    }
+
+    .imgvideo img {
+        min-width: 150px;
+        max-height: 100px;
+        height: auto;
+
+    }
+
+    .right {
+        margin: 0px;
+    }
+}

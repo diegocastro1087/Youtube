@@ -1,0 +1,199 @@
+body {
+    background-color: #ffffff;
+    color: black;
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+#menuicon span{
+    color: black;
+    font-size: 30px;
+    font-weight: 150;
+}
+
+#menulogo {
+    margin-left: 31px;
+   
+}
+
+#menulogo span {
+    position: relative;
+    top: -8px;
+    left: -2px;
+    font-size: 15px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 6px 25px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    box-sizing:border-box;
+}
+
+#taskbar {
+    display: flex;
+    align-items: center;
+}
+
+#taskbar input{
+    height: 30px;
+    border-radius: 9000px 0px 0px 9000px;
+    border: none;
+    border: solid 1px #c5c5c5;
+    padding-left: 10px;
+    width: 35vw;
+}
+
+#headerbutton {
+    border-radius: 0px 1000px 1000px 0px;
+    width: 4vw;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #c5c5c5;
+    border-left: none;
+    cursor: pointer;
+}
+
+#headerbutton span {
+    font-weight: 200;
+}
+
+#youraccount {
+    display: flex;
+    gap: 15px;
+}
+
+#menuprofile {
+    background-image: url(/assets/cityprofile.jpg);
+    border-radius: 3000px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+aside {
+    padding-top: 10px;
+    position: fixed;
+    background-color: white;
+    height: 100%;
+    width: 80px;
+}
+
+aside div {
+    margin-bottom: 20px;
+}
+
+#home, #Shorts, #Subs, #Me {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 12px;
+}
+
+#home span, #Shorts span, #Subs span, #Me span {
+font-weight: 300;
+cursor: pointer;
+}
+
+#content {
+    padding-top: 45px;
+}
+
+main {
+    padding-left: 80px;
+}
+
+section {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.categorias {
+    background-color: rgba(226, 226, 226, 0.466);
+    color:black;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#videos {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    padding-top: 55px;
+}
+
+.video a {
+    color: black;
+}
+
+.videoimg img{
+    border-radius: 20px;
+    width: 100%;
+    min-width: 150px;
+    filter: brightness(90%);
+}
+
+.info {
+    color: rgb(70, 70, 70);
+    margin-top: 5px;
+}
+
+.profiletitle {
+    font-size: 15px;
+}
+
+.videoinfo {
+    font-size: 15px;
+}
+
+.everything {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.videoleft img{
+    border-radius: 50%;
+}
+
+#menucreate span, #menunotification span {
+font-size: 30px;
+cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px){
+    #videos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 625px){
+    #videos{
+        grid-template-columns: 1fr;
+        min-width: 200px;
+    }
+}
